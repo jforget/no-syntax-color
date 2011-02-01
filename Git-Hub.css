@@ -1,0 +1,17 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("github.com") {
+.c1 { color: #000000 !important; font-style:  normal !important; } /* comment            */
+.k  { color: #000000 !important; font-weight: normal !important; } /* keyword            */
+.mi { color: #000000 !important; }                                 /* number             */
+.n  { color: #000000 !important; font-style:  normal !important; } /* name               */
+.nb { color: #000000 !important; }                                 /* function           */
+.nf { color: #000000 !important; font-weight: normal !important; } /* name               */
+.nn { color: #000000 !important; }                                 /* name, second level */
+.nv { color: #000000 !important; }                                 /* name of variable   */
+.o  { color: #000000 !important; font-weight: normal !important; } /* operator           */
+.ow { color: #000000 !important; font-weight: normal !important; } /* operator           */
+.p  { color: #000000 !important; }                                 /* punctuation        */
+.s  { color: #000000 !important; }                                 /* string             */
+.sr { color: #000000 !important; }                                 /* string, regexp     */
+}

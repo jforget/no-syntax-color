@@ -1,0 +1,35 @@
+Je n'aime pas lire des commentaires affichés comme du 
+texte italique gris clair sur fond blanc. Je n'aime pas
+lire des noms de variable affichés en bleu ciel sur fond
+blanc. Je n'aime pas lire des chaînes, des constantes, 
+de la ponctuation, ou n'importe quoi en jaune sur fond
+blanc.
+
+C'est pourquoi j'ai installé l'extension Stylish sur Firefox. Cf.
+https://addons.mozilla.org/en-US/firefox/addon/stylish/
+et http://userstyles.org/.
+
+C'est pourquoi j'ai écrit quelques feuilles de style perso,
+pour les utiliser avec Stylish lorsque je navigue sur certains
+sites web utilisant le coloriage syntaxique. Ces feuilles de
+style sont stockées dans le présent dépôt pour qu'elles puissent
+servir à quiconque partage mon opinion sur le coloriage syntaxique.
+
+Je ne méprise pas ceux qui ont écrit des outils de coloriage syntaxique.
+Leur travail est très utiles pour des programmeurs en herbe apprenant
+tel ou tel langage, tout comme les stabilisateurs sont utiles pour
+les enfants apprenant à monter à bicyclette. Mais lorsque vous grandissez,
+il arrive un moment où vous démontez vos stabilisateurs de votre vélo.
+Et lorsque vous acquérez de l'expérience dans un langage de programmation,
+lorsque vous devenez un expert, voire un gourou, vous n'avez
+plus besoin de coloriage syntaxique. Les principales difficultés
+que vous rencontrerez seront liées à la sémantique des programmes,
+pas leur syntaxe.
+
+Attention : les feuilles de style ne sont pas forcément complètes.
+Il se peut que, dans les divers fichiers sources que j'ai consultés,
+je ne sois pas tombé sur telle ou telle classe. Dans ce cas,
+il faut compléter la feuille de style avec cette nouvelle classe.
+
+Les programmes et les fichies annexes sont diffusés sous les mêmes
+conditions que Perl : au choix licence GPL et licence artistique.

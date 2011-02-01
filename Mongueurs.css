@@ -1,0 +1,23 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("mongueurs.net") {
+.c  { color: #000000 !important; } /* comment         */
+.cm { color: #000000 !important; } /* comma           */
+.co { color: #000000 !important; } /* colon           */
+.h  { color: #000000 !important; } /* here-doc-target */
+.hh { color: #000000 !important; } /* here-doc-text   */
+.i  { color: #000000 !important; font-weight: normal !important; } /* identifier      */
+.j  { color: #000000 !important; font-weight: normal !important; } /* label           */
+.k  { color: #000000 !important; font-weight: normal !important; } /* keyword         */
+.m  { color: #000000 !important; font-weight: normal !important; } /* subroutine      */
+.n  { color: #000000 !important; } /* numeric         */
+.p  { color: #000000 !important; } /* paren           */
+.pd { color: #000000 !important; } /* pod-text        */
+.pu { color: #000000 !important; } /* punctuation     */
+.q  { color: #000000 !important; } /* quote           */
+.s  { color: #000000 !important; } /* structure       */
+.sc { color: #000000 !important; } /* semicolon       */
+.v  { color: #000000 !important; } /* v-string        */
+.w  { color: #000000 !important; font-weight: normal !important; } /* bareword        */
+
+}

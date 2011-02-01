@@ -1,0 +1,34 @@
+I do not like reading comments as light grey italic text on white
+background. I do not like reading identifiers as
+sky blue text on white background. I do not like
+reading strings, constants, punctuation, whatever,
+as yellow text on white background. I prefer reading
+comments, identifiers, strings, constants, everything
+as black text on white background.
+
+This is why I have installed the Stylish extension to Firefox. See
+https://addons.mozilla.org/en-US/firefox/addon/stylish/
+and http://userstyles.org/.
+
+This is why I have written user stylesheets for use with
+Stylish when I browse some websites. These user stylesheets
+are stored in the present repository, so people sharing my
+opinions about syntax coloring are welcome to download them.
+
+I do not despise the programmers who wrote the coloring
+tools. Their work is very useful for baby-programmers
+learning a language, just like sidewheels are very
+useful for children learning to ride bicycles.
+But when you grow up, you no longer need sidewheels.
+And when you become an seasoned programmer, an expert
+or a guru, you no longer need syntax color. 
+The main problems will be with the programme's semantics,
+not their syntax.
+
+Beware: the user stylesheets are incomplete. It may happen
+that among the programmes I have browsed, I did not encounter
+such or such class. In this case, the user stylesheet need
+to be updated to include this new class.
+
+The stylesheets are published under the same terms
+as Perl: GNU General Public License (GPL) or Artistic License.
