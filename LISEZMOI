@@ -16,8 +16,8 @@ style sont stockées dans le présent dépôt pour qu'elles puissent
 servir à quiconque partage mon opinion sur le coloriage syntaxique.
 
 Je ne méprise pas ceux qui ont écrit des outils de coloriage syntaxique.
-Leur travail est très utiles pour des programmeurs en herbe apprenant
-tel ou tel langage, tout comme les stabilisateurs sont utiles pour
+Leur travail est très utile pour des programmeurs en herbe apprenant
+tel ou tel langage de programmation, tout comme les stabilisateurs sont utiles pour
 les enfants apprenant à monter à bicyclette. Mais lorsque vous grandissez,
 il arrive un moment où vous démontez vos stabilisateurs de votre vélo.
 Et lorsque vous acquérez de l'expérience dans un langage de programmation,
@@ -31,5 +31,5 @@ Il se peut que, dans les divers fichiers sources que j'ai consultés,
 je ne sois pas tombé sur telle ou telle classe. Dans ce cas,
 il faut compléter la feuille de style avec cette nouvelle classe.
 
-Les programmes et les fichies annexes sont diffusés sous les mêmes
+Les programmes et les fichiers annexes sont diffusés sous les mêmes
 conditions que Perl : au choix licence GPL et licence artistique.

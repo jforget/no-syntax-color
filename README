@@ -17,12 +17,12 @@ opinions about syntax coloring are welcome to download them.
 
 I do not despise the programmers who wrote the coloring
 tools. Their work is very useful for baby-programmers
-learning a language, just like sidewheels are very
+learning a programming language, just like sidewheels are very
 useful for children learning to ride bicycles.
 But when you grow up, you no longer need sidewheels.
 And when you become an seasoned programmer, an expert
 or a guru, you no longer need syntax color. 
-The main problems will be with the programme's semantics,
+The main problems will be with the programmes' semantics,
 not their syntax.
 
 Beware: the user stylesheets are incomplete. It may happen
