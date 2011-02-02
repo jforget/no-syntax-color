@@ -1,0 +1,117 @@
+#!/usr/bin/perl
+#
+# Extraction des feuilles de style stockées dans Stylish
+#
+use strict;
+use warnings;
+use feature ':5.10';
+use DBI;
+use Getopt::Long;
+use File::Find;
+use File::Compare;
+
+# Initialisation des répertoires
+my $rep_tmp = '/var/tmp';
+my $rep_ff  = "$ENV{HOME}/.mozilla/firefox";
+my $rep_git = "$ENV{HOME}/Documents/prog/no-syntax-color";
+my $bdd_abr = 'stylish.sqlite';
+
+GetOptions( "tmp=s"     => \$rep_tmp,
+            "firefox=s" => \$rep_ff,
+            "git=s"     => \$rep_git,
+    ) or die "Problème avec les options";
+
+# Recherche de la base de données
+my $bdd;
+find(sub { $bdd = $File::Find::name if $_ eq $bdd_abr; }, $rep_ff);
+
+# extraction
+my $nom_style;
+my $code_style;
+my $bdd_complet = "dbi:SQLite:$bdd";
+
+my $dbh = DBI->connect($bdd_complet, "", "", { RaiseError => 1 });
+my $sth = $dbh->prepare("select name, code from styles");
+$sth->execute;
+$sth->bind_col(1, \$nom_style);
+$sth->bind_col(2, \$code_style);
+while ( $sth->fetch ) {
+
+  my $fic_tmp = "$rep_tmp/$nom_style.css";
+  my $fic_git = "$rep_git/$nom_style.css";
+
+  open my $f, '>', $fic_tmp
+    or die "ouverture $fic_tmp $!";
+  print $f $code_style;
+  close $f
+    or die "fermeture $fic_tmp $!";
+
+  if (! -r $fic_git) {
+    say "$fic_git inexistant";
+  }
+  elsif (compare($fic_tmp, $fic_git)) {
+    say "$fic_git modifié";
+  }
+}
+$dbh->disconnect();
+
+exit(0);
+
+=encoding utf8
+
+=head1 NOM
+
+extract_css -- extraction des styles stockés dans Stylish
+
+=head1 VERSION
+
+Version 1.0
+
+=head1 USAGE
+
+  extract_css --tmp=/var/tmp --firefox=$HOME/.mozilla/firefoc --git=$HOME/prog/no_color-syntax
+
+=head1 OPTIONS
+
+=over 4
+
+=item tmp
+
+Nom du répertoire où stocker les fichiers temporaires, copies des styles stockés dans Stylish.
+
+=item  firefox
+
+Nom du répertoire où Firefox stocke sa configuration. La base de données F<stylish.sqlite>
+doit se trouver dans un sous-répertoire de ce répertoire.
+
+=item git
+
+Nom du répertoire où se trouvent les styles que l'on compare à ceux extraits
+de la base de données de Stylish.
+
+=back
+
+=head1 DESCRIPTION
+
+Il est malcommode de comparer le style contenu dans un fichier séquentiel avec
+un style stocké dans la base de données de Stylish. Le script permet
+d'extraire les styles de la base de données de Stylish dans des fichiers
+séquentiels et de les comparer avec les styles récupérés depuis le
+dépôt F<no-syntax-color> de GitHub.
+
+=head1 DIAGNOSTICS
+
+Le script envoie un message pour chaque style présent dans la base de données
+de Stylish et absent du répertoire associé à Git. Il envoie également
+un message pour chaque style différent entre la base de données Stylish
+et le style homonyme dans le répertoire associé à Git.
+
+=head1 AUTEUR
+
+Jean Forget L<https://github.com/jforget>
+
+=head1 LICENSE ET COPYRIGHT
+
+Ce script est publié sous les mêmes termes que S<Perl :> au choix
+licence Gnu General Public License (GPL) et licence artistique.
+
