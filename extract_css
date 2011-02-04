@@ -69,7 +69,7 @@ Version 1.0
 
 =head1 USAGE
 
-  extract_css --tmp=/var/tmp --firefox=$HOME/.mozilla/firefoc --git=$HOME/prog/no_color-syntax
+  extract_css --tmp=/var/tmp --firefox=$HOME/.mozilla/firefox --git=$HOME/Documents/prog/no_color-syntax
 
 =head1 OPTIONS
 
@@ -79,7 +79,7 @@ Version 1.0
 
 Nom du répertoire où stocker les fichiers temporaires, copies des styles stockés dans Stylish.
 
-=item  firefox
+=item firefox
 
 Nom du répertoire où Firefox stocke sa configuration. La base de données F<stylish.sqlite>
 doit se trouver dans un sous-répertoire de ce répertoire.
@@ -106,11 +106,26 @@ de Stylish et absent du répertoire associé à Git. Il envoie également
 un message pour chaque style différent entre la base de données Stylish
 et le style homonyme dans le répertoire associé à Git.
 
+En revanche, il ne signale pas les styles qui coïncident, ni les styles
+qui figurent dans le répertoire associé à Git mais qui sont absents de la
+base de données de Stylish.
+
+=head1 BUGS ET PROBLÈMES CONNUS
+
+Les styles de Stylish sont extraits, par défaut, dans le répertoire F</var/tmp>.
+C'est un répertoire accessible par tous les utilisateurs ayant accès à votre
+machine. D'une part, cela entraîne des risques d'écrasement réciproque des
+styles extraits s'ils ont le même nom, d'autre part cela pose des problèmes
+de S<confidentialité :> vous ne souhaitez peut-être pas que les autres 
+utilisateurs soient au courant que vous accédez au site C<http://3615-ulla.com>
+et que vous y accédez suffisamment fréquemment pour définir un style utilisateur
+pour ce site...
+
 =head1 AUTEUR
 
 Jean Forget L<https://github.com/jforget>
 
-=head1 LICENSE ET COPYRIGHT
+=head1 LICENCE ET COPYRIGHT
 
 Ce script est publié sous les mêmes termes que S<Perl :> au choix
 licence Gnu General Public License (GPL) et licence artistique.

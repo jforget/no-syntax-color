@@ -31,5 +31,13 @@ Il se peut que, dans les divers fichiers sources que j'ai consultés,
 je ne sois pas tombé sur telle ou telle classe. Dans ce cas,
 il faut compléter la feuille de style avec cette nouvelle classe.
 
+Comment synchroniser la base de données de Stylish avec le dépôt Git ?
+Le script extract-css permet d'extraire les styles de la base de données
+Stylish et de les stocker sous la forme de fichiers textes. Ensuite,
+libre à vous de comparer les fichiers extraits avec les fichiers du
+dépôt Git, avec les outils habituels : diff et patch en shell, 
+le mode ediff sous Emacs, etc. Pour copier un style du dépôt Git
+vers la base de données Stylish, faire des copier-coller tout bêtement.
+
 Les programmes et les fichiers annexes sont diffusés sous les mêmes
 conditions que Perl : au choix licence GPL et licence artistique.
