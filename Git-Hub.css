@@ -4,7 +4,7 @@
 .c   { color: #000000 !important; font-style:  normal !important; } /* comment in CSS     */
 .c1  { color: #000000 !important; font-style:  normal !important; } /* comment            */
 .cp  { color: #000000 !important; font-weight: normal !important; } /* CSS                */
-.err { color: #000000 !important; font-style:  normal !important; } /* error in POD       */
+.err { color: #000000 !important; background: #FFFFFF !important; font-style:  normal !important; } /* error in POD       */
 .k   { color: #000000 !important; font-weight: normal !important; } /* keyword            */
 .m   { color: #000000 !important; }                                 /* CSS                */
 .mf  { color: #000000 !important; }                                 /* CSS                */
