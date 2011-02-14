@@ -3,23 +3,32 @@
 @-moz-document domain("github.com") {
 .c   { color: #000000 !important; font-style:  normal !important; } /* comment in CSS     */
 .c1  { color: #000000 !important; font-style:  normal !important; } /* comment            */
+.cm  { color: #000000 !important; font-style:  normal !important; } /* POD comment        */
 .cp  { color: #000000 !important; font-weight: normal !important; } /* CSS                */
 .err { color: #000000 !important; background: #FFFFFF !important; font-style:  normal !important; } /* error in POD       */
 .k   { color: #000000 !important; font-weight: normal !important; } /* keyword            */
+.kp  { color: #000000 !important; font-weight: normal !important; } /* Ruby               */
 .m   { color: #000000 !important; }                                 /* CSS                */
 .mf  { color: #000000 !important; }                                 /* CSS                */
 .mi  { color: #000000 !important; }                                 /* number             */
 .n   { color: #000000 !important; font-style:  normal !important; } /* name               */
 .nb  { color: #000000 !important; }                                 /* function           */
 .nc  { color: #000000 !important; font-weight: normal !important; } /* CSS                */
-.nf { color: #000000 !important; font-weight: normal !important; } /* name               */
-.nn { color: #000000 !important; }                                 /* name, second level */
+.nf  { color: #000000 !important; font-weight: normal !important; } /* name               */
+.nn  { color: #000000 !important; }                                 /* name, second level */
+.no  { color: #000000 !important; }                                 /* Ruby               */
 .nt { color: #000000 !important; }                                 /* CSS                */
 .nv { color: #000000 !important; }                                 /* name of variable   */
 .o  { color: #000000 !important; font-weight: normal !important; } /* operator           */
 .ow { color: #000000 !important; font-weight: normal !important; } /* operator           */
 .p  { color: #000000 !important; }                                 /* punctuation        */
 .s  { color: #000000 !important; }                                 /* string             */
-.s2 { color: #000000 !important; }                                 /* CSS                */
-.sr { color: #000000 !important; }                                 /* string, regexp     */
+.s1  { color: #000000 !important; }                                 /* Ruby               */
+.s2  { color: #000000 !important; }                                 /* CSS                */
+.se  { color: #000000 !important; }                                 /* Ruby               */
+.sr  { color: #000000 !important; }                                 /* string, regexp     */
+.ss  { color: #000000 !important; }                                 /* Ruby               */
+.sx  { color: #000000 !important; }                                 /* Ruby               */
+.vg  { color: #000000 !important; }                                 /* Ruby               */
+.vi  { color: #000000 !important; }                                 /* Ruby               */
 }

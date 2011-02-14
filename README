@@ -32,10 +32,10 @@ to be updated to include this new class.
 
 How can we synchronise the Stylish database and the Git repository?
 The extract-css script allows you to extract the styles from the
-Stylish database and store them as sequential files. Then,
-you can use the standard tools: diff and patch under shell,
-ediff mode under Emacs, etc. To copy a style in the other direction,
-from the Git repository to the Stylish database, just
+Stylish database and store them as sequential files. Then, you can use
+the standard tools: diff and patch under shell, ediff mode under
+Emacs, etc. or even a plain cp under shell. To copy a style in the
+other direction, from the Git repository to the Stylish database, just
 copy and paste it.
 
 The stylesheets are published under the same terms
