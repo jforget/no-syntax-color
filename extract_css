@@ -37,8 +37,8 @@ $sth->bind_col(1, \$nom_style);
 $sth->bind_col(2, \$code_style);
 while ( $sth->fetch ) {
 
-  my $fic_tmp = "$rep_tmp/$nom_style.css";
-  my $fic_git = "$rep_git/$nom_style.css";
+  my $fic_tmp = "$rep_tmp/$nom_style";
+  my $fic_git = "$rep_git/$nom_style";
 
   open my $f, '>', $fic_tmp
     or die "ouverture $fic_tmp $!";
