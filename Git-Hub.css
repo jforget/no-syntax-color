@@ -40,13 +40,15 @@
 .vi  { color: #000000 !important; }                                 /* Ruby               */
  /* new codification */
 .blob-code   { color: #000000 !important; }
-.pl-c   { color: #000000 !important; }
-.pl-c1  { color: #000000 !important; }
-.pl-e   { color: #000000 !important; }
-.pl-en  { color: #000000 !important; }
-.pl-ent { color: #000000 !important; }
-.pl-k   { color: #000000 !important; }
-.pl-mp  { color: #000000 !important; }
+.pl-c        { color: #000000 !important; }
+.pl-c1       { color: #000000 !important; }
+.pl-cce      { color: #000000 !important; font-style: normal !important; font-weight: normal !important; }
+.pl-e        { color: #000000 !important; }
+.pl-en       { color: #000000 !important; }
+.pl-ent      { color: #000000 !important; }
+.pl-id       { color: #000000 !important; }
+.pl-k        { color: #000000 !important; }
+.pl-mp       { color: #000000 !important; }
 .pl-pds { color: #000000 !important; }
 .pl-s   { color: #000000 !important; }
 .pl-s1  { color: #000000 !important; }
@@ -54,5 +56,6 @@
 .pl-sc  { color: #000000 !important; }
 .pl-sr  { color: #000000 !important; }
 .pl-st  { color: #000000 !important; }
+.pl-v   { color: #000000 !important; }
 .pl-vo  { color: #000000 !important; font-style: normal !important; font-weight: normal !important; }
 }
