@@ -3,7 +3,7 @@
 #
 #     Extraction des feuilles de style stockées dans Stylish
 #     Extracting CSS from Stylish
-#     Copyright (C) 2011, 2014, 2016 Jean Forget
+#     Copyright (C) 2011, 2014, 2016, 2018 Jean Forget
 #
 #     This program is distributed under the same terms as Perl 5.16.3:
 #     GNU Public License version 1 or later and Perl Artistic License
@@ -146,6 +146,9 @@ de S<confidentialité :> vous ne souhaitez peut-être pas que les autres
 utilisateurs soient au courant que vous accédez au site C<http://3615-ulla.com>
 et que vous y accédez suffisamment fréquemment pour définir un style utilisateur
 pour ce site...
+
+Suite à un avertissement de Mozilla, j'ai remplacé Stylish par Stylus. Le
+présent script ne sert plus à rien.
 
 =head1 AUTEUR
 

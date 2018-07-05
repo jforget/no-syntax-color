@@ -5,8 +5,9 @@ blanc. Je n'aime pas lire des chaînes, des constantes,
 de la ponctuation, ou n'importe quoi en jaune sur fond
 blanc.
 
-C'est pourquoi j'ai installé l'extension Stylish sur Firefox. Cf.
-https://addons.mozilla.org/en-US/firefox/addon/stylish/
+C'est pourquoi j'ai installé l'extension Stylish puis Stylus sur Firefox. Cf.
+https://addons.mozilla.org/en-US/firefox/addon/stylish/,
+https://add0n.com/stylus.html
 et http://userstyles.org/.
 
 C'est pourquoi j'ai écrit quelques feuilles de style perso,
@@ -39,6 +40,12 @@ les fichiers du dépôt Git, avec les outils habituels : diff et patch
 en shell, le mode ediff sous Emacs, etc., voire un bête cp en
 shell. Pour copier un style du dépôt Git vers la base de données
 Stylish, faire des copier-coller tout bêtement.
+
+Je n'ai pas vérifié comment les feuilles de style sont stockées par Stylus,
+ni comment on pouvait les extraire pour les synchroniser avec les feuilles
+de style stockées dans le dépôt Git. En revanche, comme j'ai pu le constater,
+il est possible de copier-coller les feuilles de style stockées dans Git
+vers Stylus.
 
 Les programmes et les fichiers annexes sont diffusés sous les mêmes
 conditions que Perl : au choix licence GPL et licence artistique.

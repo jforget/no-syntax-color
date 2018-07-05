@@ -6,12 +6,13 @@ as yellow text on white background. I prefer reading
 comments, identifiers, strings, constants, everything
 as black text on white background.
 
-This is why I have installed the Stylish extension to Firefox. See
-https://addons.mozilla.org/en-US/firefox/addon/stylish/
+This is why I have installed the Stylish and then Stylus extensions to Firefox. See
+https://addons.mozilla.org/en-US/firefox/addon/stylish/,
+https://add0n.com/stylus.html
 and http://userstyles.org/.
 
 This is why I have written user stylesheets for use with
-Stylish when I browse some websites. These user stylesheets
+Stylus when I browse some websites. These user stylesheets
 are stored in the present repository, so people sharing my
 opinions about syntax coloring are welcome to download them.
 
@@ -37,6 +38,10 @@ the standard tools: diff and patch under shell, ediff mode under
 Emacs, etc. or even a plain cp under shell. To copy a style in the
 other direction, from the Git repository to the Stylish database, just
 copy and paste it.
+
+I have not yet examined how the Stylus stylesheets are stored and 
+how you can synchronise with the Git repository. I have checked that
+copying-pasting the data stored in Git into Stylus works.
 
 The stylesheets are published under the same terms
 as Perl: GNU General Public License (GPL) or Artistic License.
